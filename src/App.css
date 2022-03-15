@@ -3,6 +3,9 @@
   --yAxisPlayer: 320px;
   --xAxisComputer: 1160px;
   --yAxisComputer: 50px;
+  --yAxisEvilCubeBottom: 320px;
+  --yAxisEvilCubeMiddle: 256px;
+  --yAxisEvilCubeTop: 192px;
 }
 
 .playingFieldLeft {
@@ -39,4 +42,32 @@
   position: absolute;
   left: var(--xAxisComputer);
   top: var(--yAxisComputer);
+}
+
+.evilBlock {
+  position: absolute;
+}
+
+.evilBlockBottom {
+  width: 64px;
+  height: 64px;
+  background-color: rgba(255, 0, 0, 1);
+  position: absolute;
+  top: var(--yAxisEvilCubeBottom);
+}
+
+.evilBlockMiddle {
+  width: 64px;
+  height: 64px;
+  background-color: rgba(255, 0, 0, 1);
+  position: absolute;
+  top: var(--yAxisEvilCubeMiddle);
+}
+
+.evilBlockTop {
+  width: 64px;
+  height: 64px;
+  background-color: rgba(255, 0, 0, 1);
+  position: absolute;
+  top: var(--yAxisEvilCubeTop);
 }
